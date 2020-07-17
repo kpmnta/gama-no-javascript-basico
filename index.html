@@ -25,7 +25,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1 class="page-header">Validador de CPF</h1>
-            <p>Através deste simples algoritmo, veremos diversos recursos e habilidades da linguagem Javascript</p>
+            <p>Vamos checar se os dados batem com um CPF válido. :)</p>
         </div>
 
     </div>
@@ -34,24 +34,29 @@
             <div class="form-group">
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon" id="sizing-addon1">CPF</span>
-                    <input type="text" class="form-control" placeholder="Digite o cpf para validação ..."
-                        aria-describedby="sizing-addon1">
+                    <input type="text" class="form-control" placeholder="Digite o cpf para validação..."
+                        aria-describedby="sizing-addon1" id="cpf_digitado">
                 </div>
                 <small class="form-text text-muted">Digite somente numeros</small>
             </div>
-            <button type="button" class="btn btn-info">Validar !</button>
+            <button type="button" id="button" class="btn btn-info" onclick="validacao()">Validar!</button>
         </form>
     </div>
     <div class="container page-header">
         <div id="success" class="alert alert-success" style="display: none;" role="alert">
-            <strong>Oba!</strong> Seu CPF é válido
+            <p>Bingo! Pode comemorar, esse CPF é válido!</p> 
+            <img src="https://media0.giphy.com/media/xTiN0CNHgoRf1Ha7CM/giphy.gif" alt="Gif Animação">
         </div>
         <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-            <strong>Ops!</strong> Seu CPF não é válido
+            <p>Infelizmente seu CPF não é válido, confira seus dados. </p> 
+            <img class="img-erro" src="https://dbriefing.com.br/blog/wp-content/uploads/2018/10/errou-faustao-gif.gif" alt="Gif Faustão Errou">
         </div>
     </div>
 
 </body>
+
+<script src="script.js" ></script>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
